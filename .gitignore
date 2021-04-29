@@ -25,3 +25,8 @@
 hs_err_pid*
 
 ### End of Java ###
+
+
+### IntelliJ IDEA ###
+
+*.iml
