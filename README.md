@@ -9,4 +9,4 @@
 ## Lekce 2
 
 - Cvičení &mdash; auta: [zadání](lekce_02/cviceni_firemni-flotila/README.md), [řešení](https://github.com/ENGETO-Java-Akademie-2021/reseni-ukolu/tree/main/lekce_02/cviceni_firemni-flotila/reseni)
-- Domácí úkol &mdash; maturita: [zadání](lekce_02/ukol_maturitni-vysledky/README.md), [řešení](https://github.com/ENGETO-Java-Akademie-2021/reseni-ukolu/tree/main/ukol_maturitni-vysledky/reseni)
+- Domácí úkol &mdash; maturita: [zadání](lekce_02/ukol_maturitni-vysledky/README.md), [řešení](https://github.com/ENGETO-Java-Akademie-2021/reseni-ukolu/tree/main/lekce_02/ukol_maturitni-vysledky/reseni)
