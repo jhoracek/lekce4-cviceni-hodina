@@ -6,6 +6,14 @@ Vaším úkolem je dopsat těla (kód) těch metod, která chybí.
 
 Pro zjednodušení načítání čísla ze vstupu jsme vám připravili metodu `safeReadInt()`, protože načítáním čísel se budeme zabývat až v&nbsp;[páté lekci](https://github.com/ENGETO-Java-Akademie-2021/content/tree/main/lekce_05).
 
+## Zadání
+
+Zkopíruj si následující kód do svého projektu a&nbsp;doplň kód chybějících metod.
+
+## Kód ke zkopírování do projektu
+
+---
+
 ```java
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -103,3 +111,5 @@ public class Main {
     }
 }
 ```
+
+---
