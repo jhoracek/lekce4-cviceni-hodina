@@ -3,11 +3,11 @@ package com.example;
 import java.time.LocalDate;
 
 public class MaturitaResult {
-    String name;
-    String surname;
-    LocalDate birthdate;
-    char schoolClass;
-    int[] results;
+    private String name;
+    private String surname;
+    private LocalDate birthdate;
+    private char schoolClass;
+    private int[] results;
 
     public MaturitaResult(String name, String surname, LocalDate birthdate, char schoolClass, int subject1, int subject2, int subject3, int subject4) {
         this.name = name;
@@ -67,7 +67,7 @@ public class MaturitaResult {
     }
 
     public boolean isSuccessful() {
-        boolean result = false;
+        boolean result = true;
         for (int subject : results) {
             result = result && subject < 5 && subject > 0;
         }
