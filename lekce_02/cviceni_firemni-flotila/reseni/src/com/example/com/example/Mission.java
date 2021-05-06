@@ -3,15 +3,11 @@ package com.example;
 import java.time.LocalDate;
 
 public class Mission {
-    Car car;
-    String target;
-    LocalDate date;
-    int distance;
-    double fuelConsumption;
-
-    public Mission(Car car, int distance, double fuelConsumption) {
-        this(car, "not specified", LocalDate.now(), distance, fuelConsumption);
-    }
+    private Car car;
+    private String target;
+    private LocalDate date;
+    private int distance;
+    private double fuelConsumption;
 
     public Mission(Car car, String target, LocalDate date, int distance, double fuelConsumption) {
         this.car = car;
@@ -27,7 +23,7 @@ public class Mission {
     }
 
     public String getDescription() {
-        return "Business mission: "+getCar().getDescription()+" to "+getTarget()+" on "+date.toString();
+        return "Business mission: " + getCar().getDescription() + " to " + getTarget() + " on " + date.toString();
     }
 
     public Car getCar() {
@@ -58,8 +54,20 @@ public class Mission {
         return distance;
     }
 
+    /**
+     * Distance should be positive. For negative value - sets 0 km.
+     *
+     * @param distance Must be positive.
+     */
     public void setDistance(int distance) {
-        this.distance = distance;
+        if (distance >= 0) {   // neni rovno by bylo != ... jen pro info
+            this.distance = distance;
+        } else {
+            this.distance = 0;
+        }
+
+//        Porovnani cisel ... je rovno ... se zapise dvojitym rovnitkem : ==
+
     }
 
     public double getFuelConsumption() {

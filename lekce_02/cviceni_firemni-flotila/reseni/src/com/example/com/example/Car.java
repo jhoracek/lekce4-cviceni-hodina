@@ -10,18 +10,20 @@ public class Car {
     private String licenseNumber;
     private int power;
     private LocalDate nextCheckDate;
+    private FuelType fuelType;
 
     public Car(String brand, String licenseNumber, LocalDate nextCheckDate) {
-        this(brand, "", 5, licenseNumber, 0, nextCheckDate);
+        this(brand, "", 5, licenseNumber, 0, nextCheckDate, FuelType.PLUGIN_HYBRID);
     }
 
-    public Car(String brand, String make, int numOfSeats, String licenseNumber, int power, LocalDate nextCheckDate) {
+    public Car(String brand, String make, int numOfSeats, String licenseNumber, int power, LocalDate nextCheckDate, FuelType fuel) {
         this.brand = brand;
         this.make = make;
         this.numOfSeats = numOfSeats;
         this.licenseNumber = licenseNumber;
         this.power = power;
         this.nextCheckDate = nextCheckDate;
+        this.fuelType = FuelType.PLUGIN_HYBRID;
     }
 
     public void setNumOfSeats(String numberAsText) {
@@ -74,6 +76,7 @@ public class Car {
 
     /**
      * Pokud je nextCheckDate starší než dnešní datum, použijeme místo něj dnešní datum.
+     *
      * @param nextCheckDate
      */
     public void setNextCheckDate(LocalDate nextCheckDate) {
@@ -84,7 +87,15 @@ public class Car {
         }
     }
 
+    public void setFuelType(FuelType fuelType) {
+        this.fuelType = fuelType;
+    }
+
+    public FuelType getFuelType() {
+        return fuelType;
+    }
+
     public String getDescription() {
-        return getBrand()+" "+getMake()+" ("+getLicenseNumber()+"): "+getNumOfSeats()+" seats";
+        return getBrand() + " " + getMake() + " (" + getLicenseNumber() + "): " + getNumOfSeats() + " seats";
     }
 }
